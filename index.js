@@ -28,4 +28,7 @@ app.get('/render', function (req, res) {
   logger.debug("GET hello !!!");
 });
 
-app.listen(8080);
+const PORT = 3000;
+app.listen(PORT, function () {
+  console.log(`listening on port ${PORT} !!`);
+});
